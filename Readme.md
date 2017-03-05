@@ -14,4 +14,9 @@ Provides an about:addons-memory page, listing the memory usage of all active add
 This extension is based on [ExtSDK](https://github.com/nmaier/extsdk/)
 
 
+![Alt text](/ScreenShot.jpg?raw=true "Optional Title")
+
+
 securefox.org
+
+
