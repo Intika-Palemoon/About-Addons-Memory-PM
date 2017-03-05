@@ -6,29 +6,30 @@
 function AboutModule() {
 }
 AboutModule.prototype = {
-  uri: Services.io.newURI("chrome://about-addons-memory/content/about.xhtml", null, null),
+  uri: Services.io.newURI("chrome://about-addons-memory-pm/content/about.xhtml", null, null),
   classDescription: "about:addons-memory about module",
   classID: Components.ID("fda5ee40-a5d6-11e1-b3dd-0800200c9a66"),
   contractID: '@mozilla.org/network/protocol/about;1?what=addons-memory',
 
   QueryInterface: XPCOMUtils.generateQI([Ci.nsIAboutModule]),
 
-  newChannel: function(aURI) {
-    let chan;
+  newChannel : function(aURI) {
     try {
-      chan = Services.io.newChannelFromURI2(
+		let chan = Services.io.newChannelFromURI(this.uri);
+		chan.originalURI = aURI;
+		return chan;
+    }
+    catch (ex) {
+		let channew = Services.io.newChannelFromURI2(
         this.uri,
         null,
         Services.scriptSecurityManager.getSystemPrincipal(),
         null,
         Ci.nsILoadInfo.SEC_ALLOW_CROSS_ORIGIN_DATA_IS_NULL,
         Ci.nsIContentPolicy.TYPE_OTHER);
+		channew.originalURI = aURI;
+		return channew;
     }
-    catch (ex) {
-      chan = Services.io.newChannelFromURI(this.uri);
-    }
-    chan.originalURI = aURI;
-    return chan;
   },
   getURIFlags: function(aURI) 0
 };

@@ -8,8 +8,8 @@ const global = this;
 function install() {}
 function uninstall() {}
 function startup(data) {
-  // will unload itself
-  Components.utils.import("chrome://about-addons-memory/content/loader.jsm");
+  // will unload itself 
+  Components.utils.import("chrome://about-addons-memory-pm/content/loader.jsm");
   _setupLoader(data, function real_startup() {
     try {
       require("main");

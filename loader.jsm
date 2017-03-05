@@ -200,12 +200,12 @@ var lazy = XPCOMUtils.defineLazyGetter;
 
       let logging;
       try {
-        logging = require("sdk/logging");
+        logging = require("logging");
         for (let [k,v] in new Iterator(logging)) {
           exports[k] = v;
         }
 
-        let prefs = require("sdk/preferences");
+        let prefs = require("preferences");
         exports.prefs = prefs.prefs;
         exports.globalPrefs = prefs.globalPrefs;
 

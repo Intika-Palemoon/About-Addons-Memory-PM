@@ -1,8 +1,8 @@
-content about-addons-memory ./
-locale about-addons-memory  en-US en-US/
-locale about-addons-memory  de de/
-locale about-addons-memory  fr fr/
-locale about-addons-memory  ja ja/
-locale about-addons-memory  sv-SE sv-SE/
-locale about-addons-memory  zh-CN zh-CN/
-locale about-addons-memory  zh-TW zh-TW/
+content about-addons-memory-pm ./
+locale about-addons-memory-pm  en-US en-US/
+locale about-addons-memory-pm  de de/
+locale about-addons-memory-pm  fr fr/
+locale about-addons-memory-pm  ja ja/
+locale about-addons-memory-pm  sv-SE sv-SE/
+locale about-addons-memory-pm  zh-CN zh-CN/
+locale about-addons-memory-pm  zh-TW zh-TW/
