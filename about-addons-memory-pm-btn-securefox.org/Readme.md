@@ -1,7 +1,7 @@
 New additional extensions
 
 
-about-addons-memory-pm-btn@securefox.org
+about-addons-memory-pm-btn-securefox.org
 
 
 Addons Memory Usage - Intika MoD - Button
