@@ -1,1 +1,21 @@
 
+#about-addons-memory-pm-btn {
+	list-style-image: url(32.png);
+}
+
+toolbar[iconsize='small'] #about-addons-memory-pm-btn {
+	list-style-image: url(16.png);
+}
+
+#about-addons-memory-pm-btn -menu menuitem {
+padding: 1px 0px 1px 0px;
+}
+
+#spanel {
+padding: 2px 0px 1px 24px;
+border-top: 1px solid #DBEAF9;
+}
+
+#spanel:hover {
+padding-left: 20px;
+}

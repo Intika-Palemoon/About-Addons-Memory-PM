@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://about-addons-memory-pm-btn/content/button.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://about-addons-memory-pm-btn/locale/lang.dtd" >
+<overlay id="about-addons-memory-pm-btn-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		
+		<toolbarpalette id="BrowserToolbarPalette">
+		
+					<toolbarbutton id="about-addons-memory-pm-btn"
+					label="&about-addons-memory-pm-btn-label;"
+					class="toolbarbutton-1 chromeclass-toolbar-additional about-addons-memory-pm-btn"
+					tooltiptext="Addons Memory Usage Stats" 
+					type="menu" 
+					orient="horizontal">
+
+						<menupopup id="about-addons-memory-pm-btn-menu" orient="vertical">
+
+							<menuitem id="free_mem" 
+							label="Free/Minimize Memory"
+							tooltiptext="Free/Minimize Memory" 
+							oncommand="minimizeMemoryUsage(function() location.reload());"/>
+
+							<menuitem id="addon2_mem_page" 
+							label="PM Memory Usage Page (about:memory)" 
+							tooltiptext="Browser memory usage (Free Memory Button, addon must be installed)" 	
+							oncommand="openUILinkIn('about:memory', 'tab');"/>	
+
+							<menuitem id="addon_mem_page" 
+							label="Addons Memory Usage Page (about:addons-memory)" 
+							tooltiptext="Addons Memory Usage Page (about:addons-memory)" 	
+							oncommand="openUILinkIn('about:addons-memory', 'tab');"/>						
+									
+						</menupopup>
+					</toolbarbutton>		
+		</toolbarpalette>
+
+		
+</overlay>
+
+
+
