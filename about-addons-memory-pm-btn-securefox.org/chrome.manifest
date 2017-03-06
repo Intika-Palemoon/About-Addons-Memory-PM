@@ -1,0 +1,6 @@
+content about-addons-memory-pm-btn chrome/content/
+style chrome://global/content/customizeToolbar.xul chrome://about-addons-memory-pm-btn/content/button.css
+
+locale  about-addons-memory-pm-btn    en-US   locale/en-US/
+
+overlay	chrome://browser/content/browser.xul chrome://about-addons-memory-pm-btn/content/button.xul

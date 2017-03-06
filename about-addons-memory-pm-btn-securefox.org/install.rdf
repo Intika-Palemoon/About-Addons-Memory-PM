@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+
+    <em:id>about-addons-memory-pm-btn@securefox.org</em:id>
+    <em:name>Addons Memory Usage - Intika MoD - Button</em:name>
+    <em:version>1.0</em:version>
+    <em:description>Add toolbar button for about-addons-memory-pm</em:description>
+    <em:creator>Intika</em:creator>
+	<em:type>2</em:type>
+    <em:homepageURL>https://github.com/intika/about-addons-memory-pm-btn/</em:homepageURL>
+	<em:iconURL>chrome://about-addons-memory-pm-btn/content/icon.png</em:iconURL>
+	
+	<!-- PaleMoon -->
+	<em:targetApplication>
+		<Description>
+			<em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+			<em:minVersion>27.1.0b1</em:minVersion>
+			<em:maxVersion>*</em:maxVersion>
+		</Description>
+	</em:targetApplication>
+	
+    <!-- Firefox -->
+    <em:targetApplication>
+		<Description>
+			<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+			<em:minVersion>19.0</em:minVersion>
+			<em:maxVersion>50.*</em:maxVersion>
+		</Description>
+    </em:targetApplication>
+
+    <!-- Android -->
+    <em:targetApplication>
+		<Description>
+			<em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
+			<em:minVersion>19.0</em:minVersion>
+			<em:maxVersion>50.*</em:maxVersion>
+		</Description>
+    </em:targetApplication>
+
+    <!-- Seamonkey -->
+    <em:targetApplication>
+		<Description>
+			<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+			<em:minVersion>2.16</em:minVersion>
+			<em:maxVersion>2.25.*</em:maxVersion>
+		</Description>
+    </em:targetApplication>
+  </Description>
+
+</RDF>
