@@ -13,11 +13,36 @@
 					orient="horizontal">
 
 						<menupopup id="about-addons-memory-pm-btn-menu" orient="vertical">
-
+                        
+							<menuitem id="about_config" 
+							label="About Config"
+							tooltiptext="Main about:config" 
+							oncommand="openUILinkIn('about:config', 'tab');"/>
+						
 							<menuitem id="free_mem" 
 							label="Free/Minimize Memory"
 							tooltiptext="Free/Minimize Memory" 
 							oncommand="minimizeMemoryUsage(function() location.reload());"/>
+							
+							<menuitem id="support.page.1" 
+							label="Abouts Pages (about:about)"
+							tooltiptext="Abouts Page Listing" 
+							oncommand="openUILinkIn('about:about', 'tab');"/>
+							
+							<menuitem id="support.page.2" 
+							label="Plugins Page (about:plugins)"
+							tooltiptext="Enabled Plugins Information" 
+							oncommand="openUILinkIn('about:plugins', 'tab');"/>
+														
+							<menuitem id="support.page.3" 
+							label="Troubleshoot Page (about:support)"
+							tooltiptext="Browser Troubleshooting Information" 
+							oncommand="openUILinkIn('about:support', 'tab');"/>
+							
+							<menuitem id="support.page.4" 
+							label="Build Conf Page (about:buildconfig)"
+							tooltiptext="Build Configuration Information" 
+							oncommand="openUILinkIn('about:buildconfig', 'tab');"/>
 
 							<menuitem id="addon2_mem_page" 
 							label="PM Memory Usage Page (about:memory)" 
